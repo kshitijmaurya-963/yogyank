@@ -1,0 +1,15 @@
+{
+  "model_version": "1.0.1",
+  "split_strategy": "temporal",
+  "train_years": [
+    2022,
+    2023
+  ],
+  "test_year": 2024,
+  "metrics": {
+    "r2": 0.7183557331202964,
+    "mae": 45.72948432298438,
+    "rmse": 56.792296941135525,
+    "n_test": 1394
+  }
+}

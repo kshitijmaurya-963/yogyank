@@ -17,7 +17,7 @@ from sklearn.metrics import mean_absolute_error, r2_score, root_mean_squared_err
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OrdinalEncoder
 
-MODEL_VERSION = "1.0.0"
+MODEL_VERSION = "1.0.1"
 RANDOM_SEED = 42
 TEMPORAL_CUTOFF_YEAR = 2024
 PM_KISAN_PENALTY = 150
@@ -70,7 +70,7 @@ def build_pipeline():
     ])
 
     model = xgb.XGBRegressor(
-        n_estimators=60,
+        n_estimators=100,
         max_depth=4,
         learning_rate=0.1,
         random_state=RANDOM_SEED,
